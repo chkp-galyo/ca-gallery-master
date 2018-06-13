@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Coding Academy</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/ca-gallery.css" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body id="page-top" onload="init()">
+  <div class="wrapper">
+
+    <div class="offcanvas-btn btn-contact" onClick="openCanvas()">
+      <i class="fa fa-comment" aria-hidden="true"></i>
+    </div>
+    <aside class="offcanvas-aside">
+
+      <!-- Contact -->
+      <section id="contact">
+        <form class="form-contact">
+          <div class="form-group">
+            <label class="col-form-label" for="formGroupExampleInput2">Subject</label>
+            <input type="text" class="form-control msg-sbj" id="formGroupExampleInput2" placeholder="Type subject here">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Message body</label>
+            <textarea class="form-control msg-body" id="exampleFormControlTextarea1" rows="3" placeholder="Type message text here"></textarea>
+          </div>
+          <button type="button" class="btn btn-success" onclick="sendEmail()">Submit</button>
+        </form>
+      </section>
+
+    </aside>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Meet Me</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Specialities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#me">Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact" onclick="openCanvas()">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Welcome To Gal's Portfolio</div>
+          <div class="intro-heading">You think your'e up to it?</div>
+          <a class="btn btn-xl js-scroll-trigger" href="#services">Dive in</a>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Me -->
+    <section class="bg-light" id="me" style="padding: 0px;">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/me.jpg" alt="">
+            <h4>Gal Yogev</h4>
+            <p class="text-muted">Lead Developer</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/gal.yogev">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-8 flex-align-center">
+          <p class="large text-muted  about-description">If you are looking for a serious web developer that has an amazing control not only in Javascript but also is a
+            master of css, your search is over! Feel free to contact me and see if I am available for you!
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading display-2">Specialities</h2>
+            <h3 class="section-subheading text-muted display-3">There are to much to list them all, here is a summarise</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i>
+                <img class="img-services html" src="./img/logos/HTML5.png" />
+              </i>
+            </span>
+            <h4 class="service-heading">HTML</h4>
+            <p class="text-muted">Killer HTML skills! It will make you loose sleep</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i>
+                <img class="img-services css" src="./img/logos/css3.png" />
+              </i>
+            </span>
+            <h4 class="service-heading">Responsive Design</h4>
+            <p class="text-muted">So responsive it will make you crazy</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i>
+                <img class="img-services js" src="./img/logos/js.png" />
+              </i>
+            </span>
+            <h4 class="service-heading">Javascript</h4>
+            <p class="text-muted">The backbone of every web application, a natural skill of mine</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading display-2">Portfolio</h2>
+            <h3 class="section-subheading text-muted  display-3"></h3>
+          </div>
+        </div>
+        <div class="row projs"></div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 flex-align-center">
+            <a href="http://coding-academy.org" target="_blank">
+              <img src="./img/ca-logo.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="modal-header display-2"></h2>
+                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <div class="img-modal"></div>
+                  <p class="modal-desc">Use this area to describe your project.</p>
+                  <div class="modal-href"></div>
+                  <ul class="list-inline">
+                    <li class="modal-date"></li>
+                    <li class="modal-lables"></li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/ca-gallery.js"></script>
+  <script src="js/gallery-service.js"></script>
+  <script src="js/offCanvas.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

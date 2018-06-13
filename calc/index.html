@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Try Stuff</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <h1>Calculater!</h1>
+    <div class="calc">
+        <table border="1">
+            <tbody>
+                <th colspan="5"></th>
+                <tr>
+                    <td><button onclick="setOp('MC')">MC</button></td><td><button onclick="setOp('MR')">MR</button></td><td><button onclick="setOp('MS')">MS</button></td><td><button onclick="setOp('mAdd')">M+</button></td><td><button>M-</button></td>
+                </tr>
+                <tr>
+                    <td><button>left</button></td><td><button onclick="setOp('CE')">CE</button></td><td><button onclick="setOp('C')">C</button></td><td><button>+-</button></td><td><button>sqrt</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addDigit(7)">7</button></td><td><button onclick="addDigit(8)">8</button></td><td><button onclick="addDigit(9)">9</button></td><td><button>/</button></td><td><button>%</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addDigit(4)">4</button></td><td><button onclick="addDigit(5)">5</button></td><td><button onclick="addDigit(6)">6</button></td><td><button>*</button></td><td><button>1/x</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addDigit(1)">1</button></td><td><button onclick="addDigit(2)">2</button></td><td><button onclick="addDigit(3)">3</button></td><td><button>-</button></td><td rowspan="2"><button onclick="prntRes(gRes)">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="addDigit(0)">0</button></td><td><button>.</button></td><td><button onclick="setOp('sum')">+</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src=js/main.js></script>
+</body>
+</html>

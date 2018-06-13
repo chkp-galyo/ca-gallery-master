@@ -1,0 +1,63 @@
+body {
+    background-color: lightblue;
+}
+
+#me {
+    /* padding: 20em; */
+    margin: 1em 0 0 0;
+    border-radius: 10px;
+}
+
+#portfolio {
+    border-radius: 10px;
+}
+
+.wrapper {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+.team-member {
+    padding: 2em;
+}
+
+.img-proj {
+    width: 290px;
+    height: 225px;
+}
+
+.modal-header {
+    text-align: center;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.form-contact {
+    background-color: lightblue;
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.img-services.css {
+    position: relative;
+    width: 60px;
+}
+
+.img-services.html {
+    position: relative;
+    width: 80px;
+}
+
+.img-services.js {
+    position: relative;
+    width: 65px;
+}
+
+@media (max-width: 992px) {
+    .btn-contact {
+        display: none;
+}

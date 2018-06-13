@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mine Sweeper Game!</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body onload="initGame(4)">
+        <div>
+                <h1>Welcome To Mine Sweeper Game!</h1>
+                <h2>Choose the level you want to play:</h2>
+            </div>
+            <div>
+                    <input type="radio" checked="checked" name="size" value="4" onclick ="restart(4)"> Beginer
+                    <input type="radio" name="size" value="6" onclick="restart(6)"> Medium
+                    <input type="radio" name="size" value="8" onclick="restart(8)"> Expert
+            </div>
+            <br />
+            <div>
+                <h3 class="best-score"></h3>
+            </div>
+            <br />
+    <div>
+        <table>
+            <tbody class='game-board'>
+
+            </tbody>
+        </table>
+    </div>
+    <br />
+            
+    <div>
+        <button class="restart hidden" onclick="restart(gSize)">Restart!</button>
+    </div>
+        <script src="js/app.js"></script>
+</body>
+</html>
+
+
+
+
+

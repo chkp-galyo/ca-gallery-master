@@ -1,0 +1,68 @@
+
+table {
+  border: solid;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: firebrick;
+  margin: auto;
+}
+
+th {
+  border: solid;
+  height: 60px;
+}
+
+td {
+  width: 25px;
+  height: 25px;
+  background-color: lightgray;
+  border: black solid 1;
+  text-align: center;
+}
+
+button {
+  width: 20px;
+  height: 20px;
+  font-size: 8PX;
+  text-align: center;
+  z-index: 10;
+  position: block;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.bomb {
+
+}
+
+.marked {
+
+}
+
+.restart {
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 24px;
+  margin: auto;
+  width: 500px;
+  height: 80px;
+
+}
+
+.score {
+  background-color: black;
+}
+
+.timer {
+  background-color: black;
+}
+
+.best-score {
+  text-align: center;
+}
